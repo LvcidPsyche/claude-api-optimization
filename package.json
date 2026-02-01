@@ -4,19 +4,30 @@
   "description": "Comprehensive Claude API cost optimization toolkit - reduce costs by 50-95%",
   "main": "cost-monitor.js",
   "scripts": {
+    "start": "node demo.js",
     "monitor": "node cost-monitor.js",
     "route": "node model-router.js",
     "cache": "node prompt-cache.js",
-    "test": "node test-optimization.js",
-    "demo": "node demo.js"
+    "batch": "node batch-processor.js",
+    "benchmark": "node benchmark.js",
+    "response-cache": "node response-cache.js",
+    "test": "npm run test:all",
+    "test:all": "npm run test:monitor && npm run test:router && npm run test:cache",
+    "test:monitor": "node test/cost-monitor.test.js",
+    "test:router": "node test/model-router.test.js",
+    "test:cache": "node test/response-cache.test.js",
+    "example:email": "node examples/email-classification.js",
+    "example:batch": "node examples/batch-content-generation.js"
   },
   "keywords": [
     "claude-api",
-    "cost-optimization", 
+    "cost-optimization",
     "prompt-caching",
     "model-routing",
+    "batch-processing",
     "anthropic",
-    "ai-cost-reduction"
+    "ai-cost-reduction",
+    "llm-optimization"
   ],
   "author": "OpenClawdad",
   "license": "MIT",
