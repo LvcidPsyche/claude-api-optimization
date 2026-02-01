@@ -21,7 +21,7 @@ class ModelRouter {
     }
     
     for (const pattern of this.complexPatterns) {
-      return wordCount > 200 ? 'complex' : 'medium';
+      return 'complex'; // Complex patterns → complex classification
     }
     
     return wordCount < 30 ? 'simple' : wordCount > 150 ? 'complex' : 'medium';
