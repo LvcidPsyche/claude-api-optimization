@@ -5,19 +5,18 @@
   "main": "cost-monitor.js",
   "scripts": {
     "start": "node demo.js",
-    "monitor": "node cost-monitor.js",
-    "route": "node model-router.js",
-    "cache": "node prompt-cache.js",
-    "batch": "node batch-processor.js",
-    "benchmark": "node benchmark.js",
-    "response-cache": "node response-cache.js",
+    "cli": "node cli.js",
+    "monitor": "node cli.js monitor",
+    "route": "node cli.js route",
+    "cache": "node cli.js cache",
+    "batch": "node cli.js batch",
+    "benchmark": "node cli.js benchmark",
+    "optimize": "node cli.js optimize",
     "test": "npm run test:all",
     "test:all": "npm run test:monitor && npm run test:router && npm run test:cache",
     "test:monitor": "node test/cost-monitor.test.js",
     "test:router": "node test/model-router.test.js",
-    "test:cache": "node test/response-cache.test.js",
-    "example:email": "node examples/email-classification.js",
-    "example:batch": "node examples/batch-content-generation.js"
+    "test:cache": "node test/response-cache.test.js"
   },
   "keywords": [
     "claude-api",
