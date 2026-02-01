@@ -1,0 +1,36 @@
+{
+  "name": "claude-api-optimization",
+  "version": "1.0.0",
+  "description": "Comprehensive Claude API cost optimization toolkit - reduce costs by 50-95%",
+  "main": "cost-monitor.js",
+  "scripts": {
+    "monitor": "node cost-monitor.js",
+    "route": "node model-router.js",
+    "cache": "node prompt-cache.js",
+    "test": "node test-optimization.js",
+    "demo": "node demo.js"
+  },
+  "keywords": [
+    "claude-api",
+    "cost-optimization", 
+    "prompt-caching",
+    "model-routing",
+    "anthropic",
+    "ai-cost-reduction"
+  ],
+  "author": "OpenClawdad",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LvcidPsyche/claude-api-optimization.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LvcidPsyche/claude-api-optimization/issues"
+  },
+  "homepage": "https://github.com/LvcidPsyche/claude-api-optimization#readme"
+}
