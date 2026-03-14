@@ -16,7 +16,9 @@
     "test:all": "npm run test:monitor && npm run test:router && npm run test:cache",
     "test:monitor": "node test/cost-monitor.test.js",
     "test:router": "node test/model-router.test.js",
-    "test:cache": "node test/response-cache.test.js"
+    "test:cache": "node test/response-cache.test.js",
+    "example:email": "node examples/email-classification.js",
+    "example:batch": "node examples/batch-content-generation.js"
   },
   "keywords": [
     "claude-api",

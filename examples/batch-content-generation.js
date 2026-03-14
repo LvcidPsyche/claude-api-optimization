@@ -51,7 +51,7 @@ Respond in JSON format: {"description": "...", "sellingPoints": ["...", "...", "
     const submission = this.processor.formatForSubmission();
 
     return {
-      batchSize: this.processor.requestsQueue.length,
+      batchSize: this.processor.queue.length,
       estimatedMetrics: metrics,
       readyForSubmission: submission,
       nextSteps: [
